@@ -1,20 +1,18 @@
 //3が大好き
-// const genkiFunction = function(number){
-//   for(let n=1; n<=number; n++){
-//   let nn=String(n)
-//   if (n % 3 === 0) {//同値は=三つ
-//     console.log(n + "!!!!!!!")
-//   } else if(nn.includes("3")===true){
-//     console.log(n+"!!!!!!!!")
-//   }else{
-//   console.log(n)
-//   }
-//   }
-//   }
+const genkiFunction = function(number){
+  for(let n=1; n<=number; n++){
+  let nn=String(n)
+  if (n % 3 === 0) {//同値は=三つ
+    console.log(n + "!!!!!!!")
+  } else if(nn.includes("3")===true){
+    console.log(n+"!!!!!!!!")
+  }else{
+  console.log(n)
+  }
+  }
+  }
 
-// genkiFunction(45)
-
-
+genkiFunction(45)
 
 
 // //Fizzbazz
@@ -32,3 +30,16 @@
 // }
 // }
 // genkiFunction(45)
+
+
+// //3倍数
+// const genkiFunction = function(number){
+//   for(let n=1; n<=number; n++){
+//   if (n % 3 === 0) {//同値は=三つ
+//     console.log(n + "!!!!!!!")
+//   } else {
+//     console.log(n)
+//   }
+//   }
+//   }
+//   genkiFunction(45)
