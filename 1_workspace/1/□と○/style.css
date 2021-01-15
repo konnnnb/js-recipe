@@ -1,0 +1,25 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.rounded {
+    border-radius: 50px;
+    background-color: yellow;
+}
+
+
+/* 変化するすべてのプロパティ（ all ）を、1 秒（ 1s ）かけて変化させる */
+.transition {
+    transition: all 1s;
+}
+
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 80px 50px;
+  border-color: transparent transparent #579e3a transparent;
+}
