@@ -2,7 +2,7 @@
   1. "!"と入力して、tabキーを押し、HTMLの雛形を作成する。
   2. script要素でmain.jsを読み込む。
 -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -18,6 +18,41 @@
   <button id="minus-button">-1</button>
   <button id="mult-button">*2</button>
 
+  <script src="main.js"></script>
+</body>
+</html> -->
+
+<!-- 2---------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Counter</title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <div>
+    <h2 id="display">0</h2>
+  </div>
+ 
+  <button id="button">クリック！</button>
+ 
+
+  <!-- <script>
+    const display = document.getElementById("display")
+    const button = document.getElementById("button")
+    let count = 0
+  
+    button.onclick = function() {
+      count += 1
+      display.textContent = count
+      display.style.color = "red"
+      //console.dir(display)
+    }
+  </script> -->
   <script src="main.js"></script>
 </body>
 </html>
