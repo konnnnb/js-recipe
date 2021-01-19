@@ -1,0 +1,35 @@
+.input-button {
+  background-color: fuchsia;
+  width: 200px;
+}
+
+.input-container {
+  background-color: deepskyblue;
+  height: 50px;
+  width: 200px;
+}
+
+.list-footer {
+  background-color: dimgrey;
+}
+
+.todo {
+  color: greenyellow;
+}
+
+.cards-container {
+  background-color: mediumpurple;
+  height: 400px;
+}
+
+.card {
+  background-color: tomato;
+  height: 200px;
+  width: 200px;
+}
+
+.delete {
+  background-color: rgb(52, 24, 209);
+
+  height: 400px;
+}
