@@ -13,6 +13,17 @@ addButton.onclick = function(){
 }
 
 
+//enterkey
+function enter(e){
+  if(e === 13){
+    const card = createCard(inputElement.value)
+    container.append(card)
+  
+    // 入力欄を空にする
+    inputElement.value = ''
+  }
+  }
+
 
 // 共通の処理：テキストからカードを作成する
 const createCard = function(text){
