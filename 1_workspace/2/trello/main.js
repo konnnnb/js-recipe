@@ -1,16 +1,40 @@
 const inputElement = document.getElementById("input-todo")
 const container = document.getElementById("cards-container")
 const addButton = document.getElementById("add-button")
-
+let list=[] 
 // 追加ボタンを押したときの処理を登録
 addButton.onclick = function(){
   // カードを作成する
   const card = createCard(inputElement.value)
   container.append(card)
 
+//入力されたものをlist配列に入れて
+  list.push(inputElement.value);
+  localStorage["ex"]=JSON.stringify(list)
+
   // 入力欄を空にする
   inputElement.value = ''
+
+
+
 }
+//reloadしてもlocalstorageに保存されていた配列内容を表示
+window.onload = function () { 
+  //localstorageから取り出す
+ list= JSON.parse(localStorage["ex"])
+ console.log(list)
+//1つずつ
+ for(let i= 0;i<list.length;i++){
+   const card = createCard(list[i])
+   container.append(card)
+ }
+}
+
+
+// const list=[] 
+// list.push(inputElement.value);
+// localStorage["ex"]=JSON.stringify(list)
+
 
 
 //enterkey
