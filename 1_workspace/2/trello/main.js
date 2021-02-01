@@ -11,7 +11,10 @@ addButton.onclick = function(){
 //入力されたものをlist配列に入れて
   list.push(inputElement.value);
   localStorage["ex"]=JSON.stringify(list)
-
+  //localStorage["text2"]="こんにちは"
+  //localStorage.setItem("text1", "こんにちは")
+  //window.localStorage.text4 = "こんにちは"
+  //localStorage.text5 = "こんにちは"
   // 入力欄を空にする
   inputElement.value = ''
 
